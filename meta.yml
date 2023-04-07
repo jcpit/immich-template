@@ -1,0 +1,42 @@
+name: Immich Application
+description: "Immich application stack with server, microservices, machine learning, web, typesense, redis, database, and proxy services."
+instructions: To deploy the Immich application, fill out the required parameters and create the stack using this template.
+changeLog:
+  - date: 2023-04-07
+    description: First Release
+links:
+  - label: Github
+    url: https://github.com/immich-app/immich
+contributors:
+  - name: Immich Website
+    url: https://immich.app/
+schema:
+  type: object
+  required:
+    - projectName
+    - UPLOAD_LOCATION
+  properties:
+    projectName:
+      type: string
+      title: Project Name
+    UPLOAD_LOCATION:
+      type: string
+      title: Upload Location
+    TYPESSENSE_API_KEY:
+      type: string
+      title: Typesense API Key
+    DB_PASSWORD:
+      type: string
+      title: Database Password
+    DB_USERNAME:
+      type: string
+      title: Database Username
+    DB_DATABASE_NAME:
+      type: string
+      title: Database Name
+    IMMICH_SERVER_URL:
+      type: string
+      title: Immich Server URL
+    IMMICH_WEB_URL:
+      type: string
+      title: Immich Web URL
